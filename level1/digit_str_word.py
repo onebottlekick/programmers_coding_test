@@ -7,5 +7,3 @@ def solution(s):
             answer = answer.replace(k, (str(word_2_num_dic[k])))
 
     return int(answer)
-
-print(solution("2three45sixseven"))
