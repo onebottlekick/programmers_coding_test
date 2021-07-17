@@ -6,5 +6,7 @@ def check(n):
 
 def solution(n):
     answer = len([i for i in range(1, n+1) if check(i)])
-    return answer-1 # 1 is not prime number
+    return answer-1 #1 is not prime number
 
+print(solution(10))
+print(check(7))
