@@ -31,3 +31,12 @@ def make_binary(x, n):
 
 def make_code(a):    
     return ''.join(a).replace('0', ' ').replace('1', '#')
+
+def solution(n, arr1, arr2):
+    answer = []
+    for i, j in zip(arr1, arr2):
+        a = str(bin(i|j)[2:]).zfill(n)
+        answer.append(a.replace('1', '#').replace('0', ' '))
+    return answer
+
+print(solution(5, [9, 20, 28, 18, 11], [30, 1, 21, 17, 28]))
